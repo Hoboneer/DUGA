@@ -26,6 +26,7 @@ import ENTITIES
 import SEGMENTS
 import GENERATION
 
+from profilehooks import profile
 
 pygame.init()
 pygame.font.init()
@@ -270,6 +271,7 @@ def update_game():
 
 
 #Main loop
+@profile
 def main_loop():
     game_exit = False
     clock = pygame.time.Clock()

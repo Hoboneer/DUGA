@@ -5,6 +5,8 @@ import PLAYER
 import pygame
 import math
 
+from profilehooks import profile
+
 pygame.init()
 
 class Slice:
@@ -77,6 +79,7 @@ class Raycast:
         self.current_htile = None
 
 
+    # @profile
     def calculate(self):
         self.res = SETTINGS.resolution
         self.fov = SETTINGS.fov
@@ -126,7 +129,7 @@ class Raycast:
         return(offset)
         
             
-
+    # @profile
     def cast(self, player_rect, angle, ray_number):
         H_hit = False
         V_hit = False
