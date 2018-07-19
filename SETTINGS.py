@@ -2,7 +2,8 @@
 
 '''Game settings'''
 current_level = 0
-fps = 31
+# Changed so I can see any differences in performance-- a bit crude, but it's a start.
+fps = 100
 caption = "DUGA v1.0 - %s"
 mode = 1
 volume = 1
