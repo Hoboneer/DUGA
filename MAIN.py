@@ -290,8 +290,11 @@ def main_loop():
                 print(b/len(allfps))
                 
                 pygame.quit()
+                game_exit = True
                 break
             #    quit()
+        if game_exit:
+            break
 
         #Update logic
         gamePlayer.control(gameCanvas.canvas)
