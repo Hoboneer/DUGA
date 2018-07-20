@@ -346,7 +346,7 @@ if __name__ == '__main__':
     gameLoad.load_entities()
 
     mapGenerator = GENERATION.Generator()
-    mapGenerator.generate_levels(5, 4)
+    mapGenerator.generate_levels(5, 4, 1)
 
     gameLoad.get_canvas_size()
 
